@@ -12,15 +12,15 @@ import javax.annotation.PostConstruct;
 @RequiredArgsConstructor
 public class TestingApplication {
 
-    private final Quoter quoter;
+//    private final Quoter quoter;
 
     public static void main(String[] args) {
         SpringApplication.run(TestingApplication.class, args);
     }
 
-    @PostConstruct
-    void test(){
-        quoter.sayQuote();
-    }
+//    @PostConstruct
+//    void test(){
+//        quoter.sayQuote();
+//    }
 
 }
