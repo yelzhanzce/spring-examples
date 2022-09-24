@@ -1,6 +1,8 @@
-package com.example.testing.spring_potrishitel;
+package com.example.testing.spring_potrishitel.impl;
 
-import org.springframework.stereotype.Component;
+import com.example.testing.spring_potrishitel.annotation.InjectRandomInt;
+import com.example.testing.spring_potrishitel.annotation.Profiling;
+import com.example.testing.spring_potrishitel.interfaces.Quoter;
 
 import javax.annotation.PostConstruct;
 

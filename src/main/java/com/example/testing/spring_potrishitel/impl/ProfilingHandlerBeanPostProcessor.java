@@ -1,5 +1,6 @@
-package com.example.testing.spring_potrishitel;
+package com.example.testing.spring_potrishitel.impl;
 
+import com.example.testing.spring_potrishitel.annotation.Profiling;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;

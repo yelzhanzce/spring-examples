@@ -1,5 +1,7 @@
-package com.example.testing.spring_potrishitel;
+package com.example.testing.spring_potrishitel.config;
 
+import com.example.testing.spring_potrishitel.impl.TerminatorQuoter;
+import com.example.testing.spring_potrishitel.interfaces.Quoter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

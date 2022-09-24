@@ -1,4 +1,6 @@
-package com.example.testing.spring_potrishitel;
+package com.example.testing.spring_potrishitel.impl;
+
+import com.example.testing.spring_potrishitel.interfaces.ProfilingControllerMBean;
 
 public class ProfilingController implements ProfilingControllerMBean {
     private boolean enabled = true;
