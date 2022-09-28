@@ -1,19 +1,23 @@
 package com.example.testing.spring_potrishitel.impl;
 
+import com.example.testing.spring_potrishitel.annotation.DeprecatedClass;
 import com.example.testing.spring_potrishitel.annotation.InjectRandomInt;
+import com.example.testing.spring_potrishitel.annotation.PostProxy;
 import com.example.testing.spring_potrishitel.annotation.Profiling;
 import com.example.testing.spring_potrishitel.interfaces.Quoter;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
-//@Component
-@Profiling
+@Component
+//@Profiling
+//@DeprecatedClass(newImpl = T1000.class)
 public class TerminatorQuoter implements Quoter {
 
     @InjectRandomInt(min = 2, max = 7)
     private int repeat;
 
-    private String message;
+    private String message = "I'll be back";
 
     @PostConstruct
     public void init(){
@@ -28,6 +32,10 @@ public class TerminatorQuoter implements Quoter {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public void setRepeat(int repeat) {
+        this.repeat = repeat;
     }
 
     @Override

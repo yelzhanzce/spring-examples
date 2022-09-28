@@ -12,7 +12,7 @@ import java.lang.reflect.Proxy;
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
+//@Component
 public class ProfilingHandlerBeanPostProcessor implements BeanPostProcessor {
     private Map<String, Class> map = new HashMap<>();
     private ProfilingController controller = new ProfilingController();

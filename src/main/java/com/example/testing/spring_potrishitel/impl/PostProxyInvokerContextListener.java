@@ -7,11 +7,10 @@ import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
-import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
 
-@Component
+//@Component
 public class PostProxyInvokerContextListener implements ApplicationListener<ContextRefreshedEvent> {
 
     @Autowired
@@ -26,7 +25,7 @@ public class PostProxyInvokerContextListener implements ApplicationListener<Cont
             BeanDefinition beanDefinition = factory.getBeanDefinition(name);
             String originalClassName = beanDefinition.getBeanClassName();
             try {
-                if (originalClassName != null){
+                if (originalClassName != null) {
                     Class<?> originalClass = Class.forName(originalClassName);
                     Method[] methods = originalClass.getMethods();
 
