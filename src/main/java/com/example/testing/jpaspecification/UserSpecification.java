@@ -10,6 +10,7 @@ import javax.persistence.criteria.Root;
 public class UserSpecification implements Specification {
     @Override
     public Predicate toPredicate(Root root, CriteriaQuery query, CriteriaBuilder criteriaBuilder) {
+
         return null;
     }
 }
